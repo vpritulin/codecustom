@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="np_city" resource="default" comment="List of data/schema patches">
+        <column xsi:type="int" name="entity_id" identity="true" comment="Entity Id" />
+        <column xsi:type="varchar" name="description" length="1024" nullable="false" comment="Description" />
+        <column xsi:type="varchar" name="ref" length="1024" nullable="false" comment="Ref" />
+        <column xsi:type="varchar" name="area" length="1024" nullable="false" comment="Area" />
+        <column xsi:type="varchar" name="settlement_type" length="1024" nullable="false" comment="Settlement Type" />
+        <column xsi:type="varchar" name="is_branch" length="1024" nullable="false" comment="Is Branch" />
+        <column xsi:type="varchar" name="prevent_entry_new_streets_user" length="1024" nullable="false" comment="Prevent Entry New Streets User" />
+        <column xsi:type="varchar" name="conglomerates" length="1024" nullable="false" comment="Conglomerates" />
+        <column xsi:type="varchar" name="city_id" length="1024" nullable="false" comment="City ID" />
+        <column xsi:type="varchar" name="settlement_type_description" length="1024" nullable="false" comment="Settlement Type Description Ru" />
+        <column xsi:type="varchar" name="area_description" length="1024" nullable="false" comment="Area Description Ru" />
+        <column xsi:type="datetime" name="created_at" on_update="false" nullable="true" comment="Created At"/>
+        <column xsi:type="datetime" name="updated_at" on_update="false" nullable="true" comment="Updated At"/>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="entity_id" />
+        </constraint>
+    </table>
+    <table name="np_department" resource="default" comment="List of data/schema patches">
+        <column xsi:type="int" name="entity_id" identity="true" comment="Entity Id" />
+        <column xsi:type="varchar" name="description" length="1024" nullable="false" comment="Description" />
+        <column xsi:type="varchar" name="ref" length="1024" nullable="false" comment="Ref" />
+        <column xsi:type="varchar" name="area" length="1024" nullable="false" comment="Area" />
+        <column xsi:type="varchar" name="settlement_type" length="1024" nullable="false" comment="Settlement Type" />
+        <column xsi:type="varchar" name="is_branch" length="1024" nullable="false" comment="Is Branch" />
+        <column xsi:type="varchar" name="prevent_entry_new_streets_user" length="1024" nullable="false" comment="Prevent Entry New Streets User" />
+        <column xsi:type="varchar" name="conglomerates" length="1024" nullable="false" comment="Conglomerates" />
+        <column xsi:type="varchar" name="city_id" length="1024" nullable="false" comment="City ID" />
+        <column xsi:type="varchar" name="settlement_type_description" length="1024" nullable="false" comment="Settlement Type Description Ru" />
+        <column xsi:type="varchar" name="area_description" length="1024" nullable="false" comment="Area Description Ru" />
+        <column xsi:type="datetime" name="created_at" on_update="false" nullable="true" comment="Created At"/>
+        <column xsi:type="datetime" name="updated_at" on_update="false" nullable="true" comment="Updated At"/>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="entity_id" />
+        </constraint>
+    </table>
+</schema>
